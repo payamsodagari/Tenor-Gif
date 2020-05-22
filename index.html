@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Tenor Gif</title>
+    <link rel="icon" href="image/logo.jpg" type="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="head">
+    <nav class="navbar fixed-top navbar navbar-dark bg-primary">
+        <h1 id="head-title" class="navbar-brand">
+            Tenor Gif
+        </h1>
+        <img src="image/logo1.jpg" width="50" height="50" alt="logo">
+        <input onfocus="this.value=''" id="search" class="form-control col-md-10" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-dark" type="submit" onclick="grab_data()">Search</button>
+    </nav>
+</header>
+<div class="container">
+    <p id="inSearch" ></p>
+    <div id="image" class="row  row-cols-2 row-cols-md-4"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
